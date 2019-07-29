@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"
+        ><img src="./assets/Logo.svg" alt="Logo" class="logo"
+      /></a>
+      <input
+        type="text"
+        placeholder="Search for a book, article, magazine etc.,"
+        class="search"
+        id="search-bar"
+      />
+      <nav>
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">About</a></li>
+          <li class="login-button" id="login-header">
+            <a href="#"><i class="fas fa-user"></i> Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <ul class="quote-wrapper">
+          <div class="quote-content quote-content-1 current-quote first-slide">
+            <p class="quote">
+              “A room without books is like a body without a soul.”
+            </p>
+            <p class="said-by">-- Cicero</p>
+          </div>
+          <div class="quote-content quote-content-2">
+            <p class="quote">
+              “So many books, so little time.”
+            </p>
+            <p class="said-by">-- Frank Zappa</p>
+          </div>
+          <div class="quote-content quote-content-3">
+            <p class="quote">
+              "There is no friend as loyal as a book."
+            </p>
+            <p class="said-by">-- Ernest Hemingway</p>
+          </div>
+          <div class="quote-content quote-content-4">
+            <p class="quote">
+              “Think before you speak. Read before you think.”
+            </p>
+            <p class="said-by">-- Fran Lebowitz</p>
+          </div>
+          <div class="quote-content quote-content-5">
+            <p class="quote">
+              “Today a reader, tomorrow a leader.”
+            </p>
+            <p class="said-by">-- Margaret Fuller</p>
+          </div>
+        </ul>
+      </section>
+      <article class="login-block">
+        <div>
+          <h2>Log In / Sign Up</h2>
+          <p>Email / User Name:</p>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="input-area"
+          />
+          <p>Password:</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="input-area"
+          />
+          <button>Log In</button>
+          <p class="forgot-password"><a href="#">forgot password?</a></p>
+          <p class="signup">Don't have an account? <a href="#">SIGN UP</a></p>
+        </div>
+      </article>
+    </main>
+
+    <!-- tried to implement bullets at the bottom of the page which scroll through quotes dynamically -->
+    <!-- <div class="slide-dots">
+      <button class="current-dot"></button>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div> -->
+
+    <footer>
+      <p>&copy; 2019 Osmania University; All Rights Reserved</p>
+      <ul class="social-media">
+        <li>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
